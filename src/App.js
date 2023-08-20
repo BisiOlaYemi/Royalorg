@@ -1,10 +1,15 @@
+import Hero from "./components/Homepage/Hero";
+import MainLayout from "./components/Layouts/MainLayouts";
+
 
 
 function App() {
   return (
+    <MainLayout>
     <div className="">
-      <h1 className="font-bold text-3xl text-gray-700">Hello World</h1>
+      <Hero />
     </div>
+    </MainLayout>
   );
 }
 

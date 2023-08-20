@@ -1,15 +1,17 @@
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
 import Navbar from "./Navbar";
-import Footer from "../Footer/footer";
 
 const MainLayout = ({ children }) => {
     return (
-      <div className="flex-col flex">
-        <Navbar />
-       <div className="flex-1"> {children}</div>
-        <Footer />
-      </div>
+      <BrowserRouter> {/* Wrap with BrowserRouter */}
+        <div className="flex-col flex">
+          <Navbar />
+          <div className="flex-1">{children}</div>
+        </div>
+      </BrowserRouter>
     );
-  };
-  
-  export default MainLayout;
-  
+};
+
+export default MainLayout;
