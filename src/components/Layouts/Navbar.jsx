@@ -18,26 +18,26 @@ const Navbar = () => {
         </Link>
         <HiMenuAlt3
           onClick={handleNavToggle}
-          className="z-20 text-gray-800 cursor-pointer lg:hidden"
+          className="z-20 text-white cursor-pointer lg:hidden"
           size={25}
         />
         <ul className="hidden lg:flex space-x-8">
-          <li className="font-bold text-xl text-gray-800">
+          <li className="font-semibold font-[Poppins] text-xl text-gray-800">
             <Link to="/" className="hover:text-gray-800">
               Home
             </Link>
           </li>
-          <li className="font-bold text-xl text-gray-800">
+          <li className="font-semibold font-[Poppins] text-xl text-gray-800">
             <Link to="/Aboutus" className="hover:text-gray-800">
               About Us
             </Link>
           </li>
-          <li className="font-bold text-xl text-gray-800">
+          <li className="font-semibold font-[Poppins] text-xl text-gray-800">
             <Link to="/courses" className="hover:text-gray-800">
               Services
             </Link>
           </li>
-          <li className="font-bold text-xl text-gray-800">
+          <li className="font-semibold font-[Poppins] text-xl text-gray-800">
             <Link to="/recruitTalent" className="hover:text-gray-800">
               Contact us
             </Link>
