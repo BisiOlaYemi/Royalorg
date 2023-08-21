@@ -22,7 +22,7 @@ const Navbar = () => {
           size={25}
         />
         <ul className="hidden lg:flex space-x-8">
-          <li className="font-semibold font-[Poppins] text-xl text-gray-800">
+          <li className="font-semibold font-[Open Sans] text-xl text-gray-800">
             <Link to="/" className="hover:text-gray-800">
               Home
             </Link>
