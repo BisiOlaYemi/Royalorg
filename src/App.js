@@ -1,6 +1,7 @@
 import Hero from "./components/Homepage/Hero";
-import ImageCard from "./components/Homepage/ImageCard";
+// import ImageCard from "./components/Homepage/ImageCard";
 import Royal from "./components/Homepage/Royal";
+import Services from "./components/Homepage/Services";
 import MainLayout from "./components/Layouts/MainLayouts";
 
 
@@ -11,7 +12,8 @@ function App() {
     <div className="">
       <Hero />
       <Royal />
-      <ImageCard />
+      <Services />
+      {/* <ImageCard /> */}
     </div>
     </MainLayout>
   );
