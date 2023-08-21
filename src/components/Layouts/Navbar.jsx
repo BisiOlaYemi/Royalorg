@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
-// import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="relative z-50">
       <div className="absolute top-0 left-0 w-full p-4 flex justify-between items-center">
         <Link to="/">
-          {/* <img src={logo} alt="Careehaven" style={{ width: '150px', height: 'auto' }} /> */}
+          <img src={logo} alt="RoyalHeritage" style={{ width: '170px', height: 'auto' }} />
         </Link>
         <HiMenuAlt3
           onClick={handleNavToggle}
