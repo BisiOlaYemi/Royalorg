@@ -19,10 +19,10 @@ const Hero = () => {
         </p>
         <div className="text-center md:w-[85%] flex flex-wrap gap-1 md:gap-3">
           <Link to="">
-            <button className="bg-blue-950 text-white md:px-7 px-4 py-3 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300">Get Started</button>
+            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300">Get Started</button>
           </Link>
           <Link to="">
-            <button className="border text-gray-950 font-semibold md:px-7 px-4 py-3 text-lg rounded-full hover:bg-gray-400 hover:scale-105 transition-all duration-300">Our Services</button>
+            <button className="border text-gray-950 font-semibold md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-400 hover:scale-105 transition-all duration-300">Our Services</button>
           </Link>
         </div>
       </div>
