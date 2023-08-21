@@ -18,7 +18,7 @@ const ImageCard = () => {
             key={index}
             className="flex items-center justify-center p-4"
           >
-            <img src={image} alt="list of" className='rounded-lg' />
+            <img src={image} alt="list of" className='rounded-lg hover:scale-105 transition-all duration-300' />
           </div>
         ))}
       </div>
