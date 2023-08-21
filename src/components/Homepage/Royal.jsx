@@ -16,7 +16,7 @@ const Royal = () => {
         Our value-added services ensure the flow of goods maintains consistency in supply chains, remaining efficient and streamlined for success.At the heart of our operational philosophy lies an unwavering dedication to supporting diverse industries. We comprehend the intricacies of various sectors and tailor our services to their unique demands. From the dynamic realm of technology to the intricate tapestry of fashion, from the essentials of food to the complexities of machinery, Royal Heritage has mastered the art of aligning our logistics prowess with specific industry requirements.</p>
         <div className='mt-12'>
         <Link to="">
-            <button className="bg-blue-950 text-white md:px-7 px-4 py-3 text-lg rounded-lg hover:bg-gray-800 hover:scale-105 transition-all duration-300">Learn More</button>
+            <button className="border text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300">Learn More</button>
           </Link>
         </div>
 
