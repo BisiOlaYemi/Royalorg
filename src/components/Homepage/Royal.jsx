@@ -11,7 +11,7 @@ const Royal = () => {
         </div>
 
       <div className="md:pr-8">
-        <h2 className="text-center bg-gradient-to-r from-gray-800 to-sky-400 text-transparent font-bold bg-clip-text text-[3rem] lg:text-[4rem]">Royal Heritage International Enterprises</h2>
+        <h2 className="text-center bg-gradient-to-r from-gray-800 to-sky-400 text-transparent font-bold bg-clip-text text-[3rem] lg:text-[4rem] mb-2">Royal Heritage International Enterprises</h2>
         <p className="text-center md:text-left">Royal heritage is the world's leading global logistics provider - we support industry and facilitate the international exchange of goods through land transport.
         Our value-added services ensure the flow of goods maintains consistency in supply chains, remaining efficient and streamlined for success.At the heart of our operational philosophy lies an unwavering dedication to supporting diverse industries. We comprehend the intricacies of various sectors and tailor our services to their unique demands. From the dynamic realm of technology to the intricate tapestry of fashion, from the essentials of food to the complexities of machinery, Royal Heritage has mastered the art of aligning our logistics prowess with specific industry requirements.</p>
         <div className='mt-12'>
