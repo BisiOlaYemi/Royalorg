@@ -6,6 +6,7 @@ import heritage1 from '../../assets/heritage1.png';
 import heritage2 from '../../assets/heritage2.png';
 import heritage3 from '../../assets/heritage3.png';
 
+
 const Hero = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full sm:m12 mt-24" id="home">
