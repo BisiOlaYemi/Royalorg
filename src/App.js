@@ -1,5 +1,5 @@
 import Hero from "./components/Homepage/Hero";
-// import ImageCard from "./components/Homepage/ImageCard";
+import ImageCard from "./components/Homepage/ImageCard";
 import Royal from "./components/Homepage/Royal";
 import Services from "./components/Homepage/Services";
 import MainLayout from "./components/Layouts/MainLayouts";
@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <Royal />
       <Services />
-      {/* <ImageCard /> */}
+      <ImageCard />
     </div>
     </MainLayout>
   );
