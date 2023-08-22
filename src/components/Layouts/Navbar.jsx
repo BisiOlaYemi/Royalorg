@@ -33,12 +33,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="font-semibold font-[Poppins] text-xl text-gray-800">
-            <Link to="/courses" className="hover:text-gray-800">
+            <Link to="/services" className="hover:text-gray-800">
               Services
             </Link>
           </li>
           <li className="font-semibold font-[Poppins] text-xl text-gray-800">
-            <Link to="/recruitTalent" className="hover:text-gray-800">
+            <Link to="/contact" className="hover:text-gray-800">
               Contact us
             </Link>
           </li>
@@ -53,17 +53,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="font-semibold text-xl text-gray-800">
-              <Link to="/Aboutus" className="hover:text-green-800">
+              <Link to="/about" className="hover:text-green-800">
                 About Us
               </Link>
             </li>
             <li className="font-semibold text-xl text-gray-800">
-              <Link to="/courses" className="hover:text-green-800">
+              <Link to="/services" className="hover:text-green-800">
                 Services
               </Link>
             </li>
             <li className="font-semibold text-xl text-gray-800">
-              <Link to="/recruitTalent" className="hover:text-green-800">
+              <Link to="/contact" className="hover:text-green-800">
                 Contact us
               </Link>
             </li>
