@@ -12,9 +12,9 @@ createRoot(document.getElementById('root')).render(
   <Router>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/about" element={<AboutUs />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/contact" element={<ContactUs /> } />      
+      <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="/Services" element={<Services />} />
+      <Route path="/Contact" element={<ContactUs /> } />      
     </Routes>
   </Router>
 );
