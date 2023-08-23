@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 p-4 text-center text-gray-400">
-        All rights reserved &copy; 2023 Royal Heritage Intl Enterprises
+         &copy; Royal Heritage Intl Enterprises 2023 | All rights reserved
       </div>
     </footer>
   );
