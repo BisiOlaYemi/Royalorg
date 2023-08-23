@@ -3,18 +3,10 @@ import MainLayout from '../Layouts/MainLayouts';
 import { Link } from 'react-router-dom';
 
 
-const AboutUs = () => {
+const Include = () => {
   return (
     <MainLayout>
-      <div className="flex flex-col md:flex-row md:h-screen">
-        {/* Left Banner Image */}
-        <div className="md:w-1/2">
-          <img src="https://img.freepik.com/free-photo/about-as-service-contact-information-concept_53876-138509.jpg?size=626&ext=jpg&ga=GA1.2.149556823.1683788678&semt=ais"
-          alt='about' 
-          className="w-full h-full object-cover" />
-        </div>
-
-        {/* Right Content */}
+      <div className="flex flex-col md:flex-row h-screen">
         <div className="md:w-1/2 p-5 md:p-10 mt-5 md:mt-24">
             <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Core Expertise</h1>
           <p className=''>
@@ -32,9 +24,15 @@ const AboutUs = () => {
             <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-6">Learn more</button>
           </Link>
         </div>
+        <div className="md:w-1/2">
+          <img src="https://img.freepik.com/free-photo/about-as-service-contact-information-concept_53876-138509.jpg?size=626&ext=jpg&ga=GA1.2.149556823.1683788678&semt=ais"
+          alt='about' 
+          className="w-full h-full object-cover" />
+        </div>
+
       </div>
     </MainLayout>
   );
 };
 
-export default AboutUs;
+export default Include;
