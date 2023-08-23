@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
         <HiMenuAlt3
           onClick={handleNavToggle}
-          className="z-20 text-white cursor-pointer lg:hidden"
+          className="z-20 text-gray-950 font-bold cursor-pointer lg:hidden"
           size={25}
         />
         <ul className="hidden lg:flex space-x-8">
