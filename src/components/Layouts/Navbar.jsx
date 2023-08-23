@@ -45,24 +45,24 @@ const Navbar = () => {
         </ul>
       </div>
       {navOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 text-gray-800">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/95">
           <ul className="flex flex-col space-y-4">
-            <li className="font-semibold text-xl text-gray-800">
+            <li className="font-semibold text-xl text-white">
               <Link to="/" className="hover:text-green-800">
                 Home
               </Link>
             </li>
-            <li className="font-semibold text-xl text-gray-800">
-              <Link to="/about" className="hover:text-green-800">
+            <li className="font-semibold text-xl text-white">
+              <Link to="/AboutUs" className="hover:text-green-800">
                 About Us
               </Link>
             </li>
-            <li className="font-semibold text-xl text-gray-800">
+            <li className="font-semibold text-xl text-white">
               <Link to="/services" className="hover:text-green-800">
                 Services
               </Link>
             </li>
-            <li className="font-semibold text-xl text-gray-800">
+            <li className="font-semibold text-xl text-white">
               <Link to="/contact" className="hover:text-green-800">
                 Contact us
               </Link>
