@@ -6,28 +6,23 @@ const Footer = () => {
   return (
     <footer className="relative bg-gray-950 text-white mt-24">
       <div className="absolute inset-0 opacity-80"></div>
-      <div className="relative container mx-auto py-10">
-        <div className="flex justify-center">
-          <div className="flex items-center space-x-6">
-            <Link to="/" className="hover:text-gray-400">
-              Home
-            </Link>
-            <span className="text-gray-400">|</span>
-            <Link to="#" className="hover:text-gray-400">
-              About Us
-            </Link>
-            <span className="text-gray-400">|</span>
-            <Link to="#" className="hover:text-gray-400">
-              Services
-            </Link>
-            <span className="text-gray-400">|</span>
-            <Link to="#" className="hover:text-gray-400">
-              Contact Us
-            </Link>
-          </div>
+      <div className="relative container mx-auto py-10 mb-8">
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+          <Link to="/" className="hover:text-gray-400">
+            Home
+          </Link>
+          <Link to="#" className="hover:text-gray-400">
+            About Us
+          </Link>
+          <Link to="#" className="hover:text-gray-400">
+            Services
+          </Link>
+          <Link to="#" className="hover:text-gray-400">
+            Contact Us
+          </Link>
         </div>
         <hr className="border-t border-gray-400 my-4" />
-        <div className="flex justify-center items-center space-x-4 mt-12 mb-12 ">
+        <div className="flex justify-center items-center space-x-4 mt-6">
           <Link to="#" className="text-white hover:text-gray-400">
             <FaFacebook size={24} />
           </Link>
