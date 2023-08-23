@@ -29,7 +29,7 @@ const AboutUs = () => {
           machinery.
           </p>
           <Link to="">
-            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-6">Learn more</button>
+            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-12">Learn more</button>
           </Link>
         </div>
       </div>
