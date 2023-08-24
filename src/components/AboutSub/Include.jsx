@@ -1,37 +1,35 @@
 import React from 'react';
-import MainLayout from '../Layouts/MainLayouts';
 import { Link } from 'react-router-dom';
 
 
 const Include = () => {
   return (
-    <MainLayout>
-      <div className="flex flex-col md:flex-row h-screen">
+      <div className="bg-gray-300 flex flex-col md:flex-row h-screen">
         <div className="md:w-1/2 p-5 md:p-10 mt-5 md:mt-24">
-            <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Core Expertise</h1>
+            <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Vision Statement</h1>
           <p className=''>
-          Providing logistics, haulage, telecom services and event management solutions in Nigeria are the main obligation of RHIE, - we specialize in delivering top-notch services to businesses, helping
-          our clients to streamline their operations and achieve their business goals. With our extensive industry experience
-          and a dedicated team of professionals, we pride ourselves on delivering exceptional results and exceeding
-          customer expectations. Whether you need efficient transportation solutions, reliable telecom services, or
-          expert event management, Royal is your trusted partner for all your business needs. At the heart of our
-          operational philosophy lies an unwavering dedication to supporting diverse industries. We comprehend the
-          intricacies of various sectors and tailor our services to their unique demands. From the dynamic realm of
-          technology to the intricate tapestry of fashion, from the essentials of food to the complexities of
-          machinery.
+          To be the leading event management company that provides comprehensive services,
+          from planning and coordination to execution and post-event evaluation, with a focus on haulage, telecom,
+          and logistics. We strive to create memorable and successful events that exceed our clients' expectations.
+          We are a full-service event management company that can help you with every aspect of your event,
+          from planning and coordination to execution and post-event evaluation. We have a team of experienced
+          professionals who are experts in event planning and management, and we are committed to providing our
+          clients with the highest level of service. We understand that every event is unique, and we tailor our
+          services to meet the specific needs of our clients. We are committed to working with you to create an
+          event that is both memorable and successful.
           </p>
-          <Link to="">
-            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-6">Learn more</button>
+          <Link to="/contact">
+            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-6">Connect</button>
           </Link>
         </div>
         <div className="md:w-1/2">
-          <img src="https://img.freepik.com/free-photo/about-as-service-contact-information-concept_53876-138509.jpg?size=626&ext=jpg&ga=GA1.2.149556823.1683788678&semt=ais"
+          <img src="https://img.freepik.com/free-photo/beautiful-pink-decorated-wedding-serving-with-centerpiece-lightening-candles_8353-10052.jpg?size=626&ext=jpg&ga=GA1.1.149556823.1683788678&semt=ais"
           alt='about' 
           className="w-full h-full object-cover" />
         </div>
 
       </div>
-    </MainLayout>
+    
   );
 };
 

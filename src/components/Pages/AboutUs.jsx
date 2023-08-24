@@ -1,6 +1,7 @@
 import React from 'react';
 import MainLayout from '../Layouts/MainLayouts';
 import { Link } from 'react-router-dom';
+import Include from '../AboutSub/Include';
 
 
 const AboutUs = () => {
@@ -33,6 +34,7 @@ const AboutUs = () => {
           </Link>
         </div>
       </div>
+      <Include />
     </MainLayout>
   );
 };
