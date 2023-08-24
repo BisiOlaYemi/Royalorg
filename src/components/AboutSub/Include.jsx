@@ -6,7 +6,7 @@ const Include = () => {
   return (
       <div className="bg-gray-300 flex flex-col md:flex-row h-screen">
         <div className="md:w-1/2 p-5 md:p-10 mt-5 md:mt-24">
-            <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Vision Statement</h1>
+            <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Vision</h1>
           <p className=''>
           To be the leading event management company that provides comprehensive services,
           from planning and coordination to execution and post-event evaluation, with a focus on haulage, telecom,
