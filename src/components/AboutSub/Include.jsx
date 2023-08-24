@@ -19,7 +19,7 @@ const Include = () => {
           event that is both memorable and successful.
           </p>
           <Link to="/contact">
-            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-6">Connect</button>
+            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-12">Connect</button>
           </Link>
         </div>
         <div className="md:w-1/2">
