@@ -2,11 +2,19 @@ import React from 'react';
 import { RiTruckFill, RiCalendarEventFill } from 'react-icons/ri';
 import { BsAirplaneFill } from 'react-icons/bs';
 import { FaSatelliteDish } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import 'tailwindcss/tailwind.css';
 
 const Services = () => {
   return (
     <div className="py-16 mt-12">
       <div className="max-w-5xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+          className=" p-4"
+          >
         <h2 className="text-3xl font-semibold text-center mb-8">Explore Our Services</h2>
         <p className="text-black font-medium text-xl text-center mb-12">
            We support industry and trade in the global exchange of merchandise through land, air, and ocean transport, telecom, and event management.
@@ -67,6 +75,7 @@ const Services = () => {
             </div>
           </div>
         </div>
+        </motion.div>
       </div>
     </div>
   );

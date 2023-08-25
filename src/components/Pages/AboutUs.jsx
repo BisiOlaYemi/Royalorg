@@ -2,6 +2,8 @@ import React from 'react';
 import MainLayout from '../Layouts/MainLayouts';
 import { Link } from 'react-router-dom';
 import Include from '../AboutSub/Include';
+import { motion } from 'framer-motion';
+import 'tailwindcss/tailwind.css';
 
 
 const AboutUs = () => {
@@ -17,6 +19,12 @@ const AboutUs = () => {
 
         {/* Right Content */}
         <div className="md:w-1/2 p-5 md:p-10 mt-5 md:mt-24">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+          className=" p-4"
+          >
             <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Core Expertise</h1>
           <p className=''>
           Providing logistics, haulage, telecom services and event management solutions in Nigeria are the main obligation of RHIE, - we specialize in delivering top-notch services to businesses, helping
@@ -32,6 +40,7 @@ const AboutUs = () => {
           <Link to="/services">
             <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-12">Learn more</button>
           </Link>
+          </motion.div>
         </div>
       </div>
       <Include />
