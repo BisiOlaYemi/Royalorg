@@ -2,6 +2,7 @@ import React from 'react';
 import { RiTruckFill, RiCalendarEventFill } from 'react-icons/ri';
 import { BsAirplaneFill } from 'react-icons/bs';
 import { FaSatelliteDish } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const ServiceItem = () => {
   return (
@@ -67,6 +68,11 @@ const ServiceItem = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='text-center'>
+      <Link to="/contact">
+            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-lg hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-8">Get Service</button>
+          </Link>
       </div>
     </div>
   );
