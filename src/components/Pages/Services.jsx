@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import MainLayout from '../Layouts/MainLayouts';
 import serve from '../../assets/serve.png';
 import ServiceItem from '../ServicePart/ServiceItem';
-
+import { motion } from 'framer-motion';
+import 'tailwindcss/tailwind.css';
 
 const Services = () => {
   return (
@@ -24,9 +25,16 @@ const Services = () => {
           </Link>
         </div>
         <div className="md:w-1/2">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+          className=" p-4"
+          >
           <img src={serve}
           alt='about' 
           className="w-full h-auto object-cover" />
+          </motion.div>
         </div>
       </div>
       <ServiceItem />
