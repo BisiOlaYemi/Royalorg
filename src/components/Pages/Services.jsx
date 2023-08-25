@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '../Layouts/MainLayouts';
 import serve from '../../assets/serve.png';
+import ServiceItem from '../ServicePart/ServiceItem';
 
 
 const Services = () => {
@@ -28,6 +29,7 @@ const Services = () => {
           className="w-full h-auto object-cover" />
         </div>
       </div>
+      <ServiceItem />
       </MainLayout>
   );
 };
