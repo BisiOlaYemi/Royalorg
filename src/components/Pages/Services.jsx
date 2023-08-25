@@ -14,12 +14,12 @@ const Services = () => {
         </p>
           <p className='mt-2'>
           Efficient transportation services for your goods and materials, latest telecommunications solutions
-          to keep your business connected. We offer a wide range of services, including voice, data,
+          to keep your business connected. get access to wide range of services, including voice, data,
           and internet, We can help you plan, organize, and execute your events, from small corporate
           meetings to large-scale festivals.
           </p>
           <Link to="/contact">
-            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-lg hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-12">Connect</button>
+            <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-lg hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-12">Get in touch</button>
           </Link>
         </div>
         <div className="md:w-1/2">
