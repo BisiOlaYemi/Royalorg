@@ -9,7 +9,7 @@ const ServiceItem = () => {
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-3xl font-semibold text-center mb-8">Explore Our Services</h2>
         <p className="text-black font-medium text-xl text-center mb-12">
-           We support industry and trade in the global exchange of merchandise through land, air, and ocean transport, telecom, and event management.
+        We have a proven track record of success in these industries, and we believe that we can offer you a valuable partnership.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
