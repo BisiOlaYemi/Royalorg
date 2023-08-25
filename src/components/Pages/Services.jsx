@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '../Layouts/MainLayouts';
+import serve from '../../assets/serve.png';
 
 
 const Services = () => {
   return (
     <MainLayout>
-      <div className="bg-gray-300 flex flex-col md:flex-row h-screen">
+      <div className="flex flex-col md:flex-row h-screen mt-24 ">
         <div className="md:w-1/2 p-5 md:p-10 mt-5 md:mt-24">
-            <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Vision</h1>
+            <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Let's Work together</h1>
           <p className=''>
           To be the leading event management company that provides comprehensive services,
           from planning and coordination to execution and post-event evaluation, with a focus on haulage, telecom,
@@ -25,7 +26,7 @@ const Services = () => {
           </Link>
         </div>
         <div className="md:w-1/2">
-          <img src="https://img.freepik.com/free-photo/beautiful-pink-decorated-wedding-serving-with-centerpiece-lightening-candles_8353-10052.jpg?size=626&ext=jpg&ga=GA1.1.149556823.1683788678&semt=ais"
+          <img src={serve}
           alt='about' 
           className="w-full h-full object-cover" />
         </div>
