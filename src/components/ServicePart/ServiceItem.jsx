@@ -3,11 +3,29 @@ import { RiTruckFill, RiCalendarEventFill } from 'react-icons/ri';
 import { BsAirplaneFill } from 'react-icons/bs';
 import { FaSatelliteDish } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const ServiceItem = () => {
+    const [ref, inView] = useInView({
+        triggerOnce: true, 
+      });
+    
+      const itemVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+      };
+
   return (
     <div className="py-16 mt-8">
       <div className="max-w-5xl mx-auto px-6">
+      <motion.div
+            className=" p-6 hover:bg-gray-50 transform hover:scale-105 transition-all"
+            variants={itemVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            ref={ref}
+          >
         <h2 className="text-3xl font-semibold text-center mb-8">Explore Our Services</h2>
         <p className="text-black font-medium text-xl text-center mb-12">
         We have a proven track record of success in these industries, and we believe that we can offer you a valuable partnership.
@@ -68,6 +86,7 @@ const ServiceItem = () => {
             </div>
           </div>
         </div>
+        </motion.div>
       </div>
       <div className='text-center'>
       <Link to="/contact">
