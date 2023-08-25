@@ -1,6 +1,7 @@
 import React from 'react';
-import { RiTruckFill, RiPhoneFill, RiCalendarEventFill } from 'react-icons/ri';
+import { RiTruckFill, RiCalendarEventFill } from 'react-icons/ri';
 import { BsAirplaneFill } from 'react-icons/bs';
+import { FaSatelliteDish } from 'react-icons/fa';
 
 const ServiceItem = () => {
   return (
@@ -12,7 +13,7 @@ const ServiceItem = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-gray-800 rounded-lg shadow-md p-6 hover:bg-gray-50 transform hover:scale-105 transition-all">
+          <div className="bg-pink-200 rounded-lg shadow-md p-6 hover:bg-gray-50 transform hover:scale-105 transition-all">
             <div className="flex flex-col items-center justify-center h-full">
                 <RiTruckFill className="text-3xl mb-2 text-sky-700" />
               <h3 className="text-xl text-sky-700 font-semibold mb-4">Logistics </h3>
@@ -26,7 +27,7 @@ const ServiceItem = () => {
             </div>
           </div>
 
-          <div className="bg-gray-800 rounded-lg shadow-md p-6 hover:bg-gray-50 transform hover:scale-105 transition-all">
+          <div className="bg-pink-200 rounded-lg shadow-md p-6 hover:bg-gray-50 transform hover:scale-105 transition-all">
             <div className="flex flex-col items-center justify-center h-full">
                 <BsAirplaneFill className="text-3xl mb-2 text-sky-700" />
               <h3 className="text-xl text-sky-700 font-semibold mb-4">Haulage </h3>
@@ -40,9 +41,9 @@ const ServiceItem = () => {
             </div>
           </div>
 
-          <div className="bg-gray-800 rounded-lg shadow-md p-6 hover:bg-gray-50 transform hover:scale-105 transition-all">
+          <div className="bg-pink-200 rounded-lg shadow-md p-6 hover:bg-gray-50 transform hover:scale-105 transition-all">
             <div className="flex flex-col items-center justify-center h-full">
-                <RiPhoneFill className="text-3xl mb-2 text-sky-700" />
+                <FaSatelliteDish className="text-3xl mb-2 text-sky-700" />
               <h3 className="text-xl text-sky-700 font-semibold mb-4">Telecom</h3>
               <ul className="text-green-600 list-disc pl-4">
                 <li>Voice services</li>
@@ -52,7 +53,7 @@ const ServiceItem = () => {
               </ul>
             </div>
           </div>
-          <div className="bg-gray-800 rounded-lg shadow-md p-6 hover:bg-gray-50 transform hover:scale-105 transition-all">
+          <div className="bg-pink-200 rounded-lg shadow-md p-6 hover:bg-gray-50 transform hover:scale-105 transition-all">
             <div className="flex flex-col items-center justify-center h-full">
                 <RiCalendarEventFill className="text-3xl mb-2 text-sky-700" />
               <h3 className="text-xl text-sky-700 font-semibold mb-4">Event Management</h3>
