@@ -7,19 +7,16 @@ import serve from '../../assets/serve.png';
 const Services = () => {
   return (
     <MainLayout>
-      <div className="flex flex-col md:flex-row h-screen mt-24 ">
-        <div className="md:w-1/2 p-5 md:p-10 mt-5 md:mt-24">
-            <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Let's Work together</h1>
-          <p className=''>
-          To be the leading event management company that provides comprehensive services,
-          from planning and coordination to execution and post-event evaluation, with a focus on haulage, telecom,
-          and logistics. We strive to create memorable and successful events that exceed our clients' expectations.
-          We are a full-service event management company that can help you with every aspect of your event,
-          from planning and coordination to execution and post-event evaluation. We have a team of experienced
-          professionals who are experts in event planning and management, and we are committed to providing our
-          clients with the highest level of service. We understand that every event is unique, and we tailor our
-          services to meet the specific needs of our clients. We are committed to working with you to create an
-          event that is both memorable and successful.
+      <div className="flex flex-col md:flex-row md:h-screen mt-24 ">
+        <div className="md:w-1/2 p-5 md:p-10 mt-5">
+        <p className="text-[2.5rem] text-center md:text-left lg:text-[3.5rem] font-bold tracking-wide text-headingColor md:w-[85%] md:leading-tight">
+          <span className="bg-gradient-to-r from-purple-500 to-amber-500 text-transparent bg-clip-text text-[2rem] lg:text-[4rem]">Let's Work</span>  Together
+        </p>
+          <p className=' mt-2'>
+          Efficient transportation services for your goods and materials, latest telecommunications solutions
+          to keep your business connected. We offer a wide range of services, including voice, data,
+          and internet, We can help you plan, organize, and execute your events, from small corporate
+          meetings to large-scale festivals.
           </p>
           <Link to="/contact">
             <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-lg hover:bg-gray-800 hover:scale-105 transition-all duration-300 mt-12">Connect</button>
@@ -28,7 +25,7 @@ const Services = () => {
         <div className="md:w-1/2">
           <img src={serve}
           alt='about' 
-          className="w-full h-full object-cover" />
+          className="w-full h-auto object-cover" />
         </div>
       </div>
       </MainLayout>
