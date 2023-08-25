@@ -14,7 +14,7 @@ const Services = () => {
         </p>
           <p className='mt-2'>
           Efficient transportation services for your goods and materials, latest telecommunications solutions
-          to keep your business connected. get access to wide range of services, including voice, data,
+          to keep your business connected. Get access to wide range of services, including voice, data,
           and internet, We can help you plan, organize, and execute your events, from small corporate
           meetings to large-scale festivals.
           </p>
