@@ -4,16 +4,27 @@ import { BsAirplaneFill } from 'react-icons/bs';
 import { FaSatelliteDish } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import 'tailwindcss/tailwind.css';
+import { useInView } from 'react-intersection-observer';
 
 const Services = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, 
+  });
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
     <div className="py-16 mt-12">
       <div className="max-w-5xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className=" p-4"
+      <motion.div
+            className="p-6 hover:bg-gray-50 transform hover:scale-105 transition-all"
+            variants={itemVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            ref={ref}
           >
         <h2 className="text-3xl font-semibold text-center mb-8">Explore Our Services</h2>
         <p className="text-black font-medium text-xl text-center mb-12">
