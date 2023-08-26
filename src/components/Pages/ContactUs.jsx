@@ -42,8 +42,6 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-
-        {/* Right Side */}
         <div className="md:w-1/2  p-8">
           <h1 className="text-3xl mb-4">Get in Touch</h1>
           <form>
