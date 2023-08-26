@@ -27,7 +27,7 @@ const Hero = () => {
           </p>
         </motion.div>
         <div className="text-center md:w-[85%] flex flex-wrap gap-1 md:gap-3">
-          <Link to="">
+          <Link to="/contact">
             <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300">Get Started</button>
           </Link>
           <Link to="">
