@@ -1,4 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import 'tailwindcss/tailwind.css';
+import { useInView } from 'react-intersection-observer';
 
 const ImageCard = () => {
   const images = [
@@ -9,9 +12,24 @@ const ImageCard = () => {
     'https://media.istockphoto.com/id/1385540374/photo/afro-woman-using-smartphone-on-avenida-paulista.jpg?s=612x612&w=0&k=20&c=NlBwvGn6c70hRd2lYbVP6Fes7ksA9YLUCYB3FiF19Os=',
     'https://media.istockphoto.com/id/1154232730/photo/wedding-decor-rustic-dining-table.jpg?s=612x612&w=0&k=20&c=5jkhCsCL5Jz6KapC_j4n9mOx2CoexcKQTjFVa1Td6-0=',
   ];
+  const [ref, inView] = useInView({
+    triggerOnce: true, 
+  });
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
 
   return (
     <div className="flex justify-center items-center mt-12">
+      <motion.div
+            className="p-6 transform hover:scale-105 transition-all"
+            variants={itemVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            ref={ref}
+          >
       <div className="grid grid-cols-3 gap-2">
         {images.map((image, index) => (
           <div
@@ -22,6 +40,7 @@ const ImageCard = () => {
           </div>
         ))}
       </div>
+      </motion.div>
     </div>
   );
 };
