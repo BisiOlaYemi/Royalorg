@@ -2,17 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import 'tailwindcss/tailwind.css';
+import { useInView } from 'react-intersection-observer';
 
 
 const Include = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, 
+  });
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
       <div className="bg-gray-300 flex flex-col md:flex-row h-screen">
         <div className="md:w-1/2 p-5 md:p-10 mt-5 md:mt-24">
           <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
-            className=" p-4"
+            className=" p-6 transform hover:scale-105 transition-all"
+            variants={itemVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            ref={ref}
           >
             <h1 className='text-3xl text-gray-800 mb-2 font-bold'>Vision</h1>
           <p className=''>
