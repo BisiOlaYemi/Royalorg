@@ -17,7 +17,7 @@ const ContactUs = () => {
         <div className="md:w-1/2 bg-teal-100 p-8">
           <div className="relative">
             <img
-              src="https://img.freepik.com/premium-photo/creative-3d-blue-background-generative-ai_963300-77.jpg?size=626&ext=jpg&ga=GA1.1.149556823.1683788678&semt=ais"
+              src="https://img.freepik.com/free-photo/scene-with-minimal-blue-podium_23-2149269983.jpg?size=626&ext=jpg&ga=GA1.2.149556823.1683788678&semt=ais"
               alt="Contact"
               className="w-full h-auto"
             />
