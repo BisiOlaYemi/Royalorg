@@ -55,7 +55,8 @@ const ContactUs = () => {
               </div>
               <div className="flex items-center mb-4">
                 <FaMapMarker className="mr-2" />
-                <span>Elephant Cement House Complex, Alausa <br /> Wing A, 5th Floor, Ikeja, Lagos State</span>
+                <p>Elephant Cement House Complex, Alausa </p> 
+                <p> Wing A, 5th Floor, Ikeja, Lagos State</p>
               </div>
               <div className="flex mt-4">
                 <FaFacebook className="mr-2 w-6 h-6" />
