@@ -7,7 +7,7 @@ const ContactUs = () => {
     <MainLayout>
       <div className=''>
           <img 
-            src='https://img.freepik.com/premium-photo/words-with-contact-us-business-concept-idea_352439-1250.jpg?size=626&ext=jpg&ga=GA1.2.149556823.1683788678&semt=ais'
+            src='https://media.istockphoto.com/id/1418045846/photo/email-phone-website-contact-us-website-banner-marketing.webp?b=1&s=170667a&w=0&k=20&c=Ln3XGXD1qDcQOu5igbrB7TY2_T-pOI2lGy0y-RHu87Y='
             alt='banner' 
             className='w-full h-full object-fit'
           />
