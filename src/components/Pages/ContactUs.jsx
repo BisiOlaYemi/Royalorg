@@ -1,8 +1,31 @@
 import React from 'react';
 import MainLayout from '../Layouts/MainLayouts';
 import { FaPhone, FaEnvelope, FaMapMarker, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
+
 
 const ContactUs = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    const serviceId = 'service_v9hahs9'; // Replace with your actual service ID from emailjs
+    const templateId = 'template_q62qdcq'; // Replace with your actual template ID from emailjs
+    const userId = 'VQcVUnmX0u_VPZ4v8'; // Replace with your actual user ID from emailjs
+  
+    const formElement = e.target; // Get the form element
+  
+    emailjs.sendForm(serviceId, templateId, formElement, userId) // Pass the form element
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        // You can add further actions here, such as showing a success message to the user
+      })
+      .catch((error) => {
+        console.error('Email failed to send:', error);
+        // You can add further actions here, such as showing an error message to the user
+      });
+  };
+  
+  
   return (
     <MainLayout>
       <div className=''>
@@ -44,7 +67,7 @@ const ContactUs = () => {
         </div>
         <div className="md:w-1/2  p-8">
           <h1 className="text-3xl mb-4">Get in Touch</h1>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                 Name
@@ -81,7 +104,7 @@ const ContactUs = () => {
             <div className="flex items-center justify-center">
               <button
                 className="bg-teal-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
+                type="submit"
               >
                 Submit
               </button>
