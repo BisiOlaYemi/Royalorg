@@ -20,7 +20,7 @@ const Services = () => {
     <div className="py-16 mt-12">
       <div className="max-w-5xl mx-auto px-6">
       <motion.div
-            className="p-6 hover:bg-gray-50 transform hover:scale-105 transition-all"
+            className="p-6 transform hover:scale-105 transition-all"
             variants={itemVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
