@@ -24,15 +24,15 @@ const ContactUs = () => {
               <h2 className="text-2xl mb-2">Contact Information</h2>
               <div className="flex items-center mb-4 mt-12">
                 <FaPhone className="mr-2" />
-                <span>123-456-7890</span>
+                <span>+234 906 267 9510</span>
               </div>
               <div className="flex items-center mb-4">
                 <FaEnvelope className="mr-2" />
-                <span>info@example.com</span>
+                <span>info@royalheritageintenterprises.com</span>
               </div>
               <div className="flex items-center mb-4">
                 <FaMapMarker className="mr-2" />
-                <span>123 Main St, City</span>
+                <span>Elephant Cement House Complex, Alausa <br /> Wing A, 5th Floor, Ikeja, Lagos State</span>
               </div>
               <div className="flex mt-4">
                 <FaFacebook className="mr-2 w-6 h-6" />
