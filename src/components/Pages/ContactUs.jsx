@@ -1,30 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainLayout from '../Layouts/MainLayouts';
 import { FaPhone, FaEnvelope, FaMapMarker, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import emailjs from 'emailjs-com';
+
 
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    const serviceId = 'service_v9hahs9'; // Replace with your actual service ID from emailjs
-    const templateId = 'template_q62qdcq'; // Replace with your actual template ID from emailjs
-    const userId = 'VQcVUnmX0u_VPZ4v8'; // Replace with your actual user ID from emailjs
-  
-    const formElement = e.target; // Get the form element
-  
-    emailjs.sendForm(serviceId, templateId, formElement, userId) // Pass the form element
+
+    fetch("https://getform.io/f/e3dd5f1d-3e5f-4d36-87b7-057185436ab7", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
       .then((response) => {
-        console.log('Email sent successfully:', response);
-        // You can add further actions here, such as showing a success message to the user
+        if (response.ok) {
+          console.log("Form submission successful!");
+          alert("Thank you for Contacting us, Your Message is sent, espect a feedback soon!");
+        } else {
+          console.log("Form submission failed.");
+          alert("Form submission failed. Please try again later.");
+        }
       })
       .catch((error) => {
-        console.error('Email failed to send:', error);
-        // You can add further actions here, such as showing an error message to the user
+        console.log("Error occurred while submitting the form:", error);
+        alert("An error occurred while submitting the form. Please try again later.");
       });
   };
-  
   
   return (
     <MainLayout>
@@ -69,48 +86,46 @@ const ContactUs = () => {
         <div className="md:w-1/2  p-8">
           <h1 className="text-3xl mb-4">Get in Touch</h1>
           <form onSubmit={handleSubmit}>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                Name
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name"
-                type="text"
-                placeholder="Your Name"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                Email
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="email"
-                type="email"
-                placeholder="me@example.com"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                Message
-              </label>
-              <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="message"
-                rows="10"
-                placeholder="Your Message"
-              />
-            </div>
-            <div className="flex items-center justify-center">
-              <button
-                className="bg-teal-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
+          <label htmlFor="user_name" className="block mb-2 font-medium text-gray-700">
+            Name
+          </label>
+          <input
+            type="text"
+            id="user_name"
+            name="user_name"
+            value={formData.user_name}
+            onChange={handleChange}
+            className="block w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          />
+          <label htmlFor="user_email" className="block mb-2 font-medium text-gray-700">
+            Email
+          </label>
+          <input
+            type="email"
+            id="user_email"
+            name="user_email"
+            value={formData.user_email}
+            onChange={handleChange}
+            className="block w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          />
+          <label htmlFor="message" className="block mb-2 font-medium text-gray-700">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={8}
+            value={formData.message}
+            onChange={handleChange}
+            className="block w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          />
+          <button
+            type="submit"
+            className="px-4 py-2 text-white bg-indigo-800 font-semibold rounded-md hover:bg-green-800 focus:outline-none focus:border-indigo-800"
+          >
+            Send Message
+          </button>
+        </form>
         </div>
       </div>
     </MainLayout>
