@@ -22,22 +22,22 @@ const ContactUs = () => {
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 text-white p-4">
               <h2 className="text-2xl mb-2">Contact Information</h2>
-              <div className="flex items-center mb-2">
+              <div className="flex items-center mb-4 mt-12">
                 <FaPhone className="mr-2" />
                 <span>123-456-7890</span>
               </div>
-              <div className="flex items-center mb-2">
+              <div className="flex items-center mb-4">
                 <FaEnvelope className="mr-2" />
                 <span>info@example.com</span>
               </div>
-              <div className="flex items-center mb-2">
+              <div className="flex items-center mb-4">
                 <FaMapMarker className="mr-2" />
                 <span>123 Main St, City</span>
               </div>
-              <div className="flex">
-                <FaFacebook className="mr-2" />
-                <FaTwitter className="mr-2" />
-                <FaInstagram />
+              <div className="flex mt-4">
+                <FaFacebook className="mr-2 w-6 h-6" />
+                <FaTwitter className="mr-2  w-6 h-6" />
+                <FaInstagram className=' w-6 h-6'/>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const ContactUs = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder="me@example.com"
               />
             </div>
             <div className="mb-4">
