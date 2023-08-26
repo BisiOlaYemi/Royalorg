@@ -30,7 +30,7 @@ const Hero = () => {
           <Link to="/contact">
             <button className="bg-blue-950 text-white md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-800 hover:scale-105 transition-all duration-300">Get Started</button>
           </Link>
-          <Link to="">
+          <Link to="/services">
             <button className="border text-gray-950 font-semibold md:px-7 px-4 py-2 text-lg rounded-full hover:bg-gray-400 hover:scale-105 transition-all duration-300">Our Services</button>
           </Link>
         </div>
