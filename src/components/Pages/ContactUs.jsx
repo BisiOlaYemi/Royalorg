@@ -13,7 +13,6 @@ const ContactUs = () => {
           />
       </div>
       <div className="flex flex-col md:flex-row">
-        {/* Left Side */}
         <div className="md:w-1/2 bg-teal-100 p-8">
           <div className="relative">
             <img
