@@ -25,8 +25,8 @@ const Royal = () => {
         className="flex justify-center items-center"
         variants={imageVariants}
         initial="hidden"
-        animate={inView ? "visible" : "hidden"} // Animate only when inView is true
-        ref={containerRef} // Attach the ref to the motion div
+        animate={inView ? "visible" : "hidden"} 
+        ref={containerRef} 
       >
         <img src={Heri} alt='heritage' className="max-w-full h-auto w-64 md:w-full rounded-lg hover:scale-105 transition-all duration-300" />
       </motion.div>
